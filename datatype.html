@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a="10";
+        let b="20";
+        console.log(a+b);//1020 string concatenation
+        console.log(a-b);//-10 automatically converts string to numerics
+        console.log(a*b);// 200 automatically converts string to numerics
+
+
+
+        let c=2;
+        let d="HK";
+        console.log(c+d); //2HK 
+        console.log(c-d);// as d is string it results in NaN(Not a Number)
+        console.log(c*d);// as d is string it results in NaN(Not a Number)
+
+
+
+        let ab=10;
+        let bc=20;
+        console.log(ab+bc);//30
+        console.log(ab-bc);//-10
+        console.log(ab*bc);//200
+        console.log(ab/bc);//0.5
+
+
+
+        let pq=null;
+        let pqr=2;
+        console.log(pq+pqr);//2
+        console.log(pq-pqr);//-2
+        console.log(pq*pqr);//0
+
+
+
+        let m=undefined;
+        let n=3;
+        console.log(m+n); //NaN
+        console.log(m-n);//NaN
+        console.log(m*n);//NaN
+
+
+
+        let ba="HK";
+        let bd=null;
+        console.log(ba+bd);//HKnull
+        console.log(ba-bd);//NaN
+
+
+
+
+        let ca="HK";
+        let cb=undefined;
+        console.log(ca+cb);//HKundefined
+
+
+
+
+        let p="100"/"20";
+        console.log(p); //5
+
+
+
+        let q=10;
+        let r="HK";
+        console.log(q/r);//NaN
+
+
+
+
+        let x=undefined;
+        let y=null;
+        let z=29;
+        let xy="Hk";
+        console.log(typeof x);//undefined
+        console.log(typeof y);//object (bug)
+        console.log(typeof z);//number
+        console.log(typeof xy);//string
+
+
+
+
+        //Object
+        const details={
+            name:"Harika kancharla",
+            age:"21",
+            degree:{
+                Btech:"SNIST",
+                inter:"CCJC",
+                10:"TTS"
+            }
+        }
+        console.log(details.name);//Harika kancharla
+        console.log(details);
+        console.log(details.gender);//undefined
+        console.log(details.degree[10])//TTS
+        console.log(details.degree.Btech);//SNIST
+
+    </script>
+</body>
+</html>
